@@ -1,6 +1,6 @@
 Todos:
 
-- [ ] Variable Renaming
+- [x] Variable Renaming
 - [ ] String Encoding
 - [ ] Control Flow Flattening
 - [ ] Whitespace and Comment Removal
