@@ -9,6 +9,7 @@ Todos:
 - [ ] Function Expression Splitting
 - [ ] Array/Object Flattening
 - [ ] Encrypting JS code
+- [ ] Clean comments
 
 Libraries that I am going to use:
 

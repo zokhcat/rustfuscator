@@ -1,3 +1,5 @@
+mod modules;
+
 use std::{fs::File, io::{self, Read}};
 
 fn main() {
