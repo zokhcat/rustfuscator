@@ -1,7 +1,7 @@
 Todos:
 
 - [x] Variable Renaming
-- [ ] String Encoding
+- [x] String Encoding
 - [ ] Control Flow Flattening
 - [ ] Whitespace and Comment Removal
 - [ ] Number Obfuscation
