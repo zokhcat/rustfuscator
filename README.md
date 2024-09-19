@@ -3,7 +3,7 @@ Todos:
 - [x] Variable Renaming
 - [x] String Encoding
 - [ ] Control Flow Flattening
-- [ ] Whitespace and Comment Removal
+- [x] Whitespace and Comment Removal
 - [ ] Number Obfuscation
 - [x] Dead Code Insertion
 - [ ] Function Expression Splitting
