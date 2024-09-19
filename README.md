@@ -5,11 +5,10 @@ Todos:
 - [ ] Control Flow Flattening
 - [ ] Whitespace and Comment Removal
 - [ ] Number Obfuscation
-- [ ] Dead Code Insertion
+- [x] Dead Code Insertion
 - [ ] Function Expression Splitting
 - [ ] Array/Object Flattening
 - [ ] Encrypting JS code
-- [ ] Clean comments
 
 Libraries that I am going to use:
 
