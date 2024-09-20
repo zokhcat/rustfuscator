@@ -1,7 +1,7 @@
 use base64::{Engine as _, engine::general_purpose::STANDARD};
 use regex::{Captures, Regex};
 
-fn encode_str(js_code: &str) -> String {
+pub fn encode_str(js_code: &str) -> String {
     let re = Regex::new(r#""([^"]*)""#).unwrap();
 
     let encode_js = re.replace_all(js_code, |caps: &Captures| {

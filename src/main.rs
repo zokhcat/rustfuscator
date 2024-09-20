@@ -1,20 +1,40 @@
 mod modules;
+mod utils;
 
-use std::{fs::File, io::{self, Read}};
+use utils::{
+    read::read_js_file,
+    write::write_js_file
+};
+
+use modules::{
+    dead_code::dead_code::insert_dead_code, 
+    whitespace::whitespace::whitespace_and_comments, 
+    variables::variable_rename::obfuscate_vars,
+    encode::encode::encode_str
+};
+
 
 fn main() {
     let file_path = "./test-js/test1.js";
+    let out_file_path = "./test-js/test1.obs.js";
 
-    match read_js_file(file_path) {
-        Ok(js_code) => println!("Javascript code:\n{}", js_code),
+    match read_js_file(&file_path){
+        Ok(mut js_code) => {
+            js_code = insert_dead_code(&js_code);
+
+            js_code = whitespace_and_comments(&js_code);
+
+            js_code = obfuscate_vars(&js_code);
+
+            js_code = encode_str(&js_code);
+            // println!("After Encoding:\n{}\n", js_code);
+
+            match write_js_file(out_file_path, &js_code) {
+                Ok(_) => println!("Obfuscated JavaScript code saved to: {}", out_file_path),
+                Err(e) => eprintln!("Error writing file: {}", e),
+            }
+
+        },
         Err(e) => eprintln!("Error reading file: {}", e),
-    } 
-}
-
-
-fn read_js_file(path: &str) -> io::Result<String> {
-    let mut file = File::open(path).unwrap();
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).unwrap();
-    Ok(contents)
+    }
 }

@@ -1,7 +1,7 @@
 use rand::{thread_rng, Rng};
 use regex::{Captures, Regex};
 
-fn insert_dead_code(js_code: &str) -> String {
+pub fn insert_dead_code(js_code: &str) -> String {
     let mut rng = thread_rng();
 
     let dead_code_snippets = vec![

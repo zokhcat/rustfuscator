@@ -13,7 +13,7 @@ fn generate_random_string(length: usize) -> String {
     }).collect()
 }
 
-fn obfuscate_vars(js_code: &str) -> String {
+pub fn obfuscate_vars(js_code: &str) -> String {
     let re = Regex::new(r"\b(let|var|const|function)\s+(a-zA-Z_)\w*").unwrap();
     let mut replacements = collections::HashMap::new();
 
