@@ -22,16 +22,11 @@ fn main() {
 
     match read_js_file(&file_path){
         Ok(mut js_code) => {            
-            js_code = insert_dead_code(&js_code);
-
             js_code = whitespace_and_comments(&js_code);
-
+            js_code = insert_dead_code(&js_code);
             js_code = obfuscate_vars(&js_code);
-
             js_code = encode_str(&js_code);
-
             js_code = number_obs(&js_code);
-
             js_code = split_function(&js_code);
 
             match write_js_file(out_file_path, &js_code) {
