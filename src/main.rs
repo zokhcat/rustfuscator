@@ -1,6 +1,7 @@
 mod modules;
 mod utils;
 
+use clap::{Arg, Command};
 use utils::{
     read::read_js_file,
     write::write_js_file
@@ -17,10 +18,31 @@ use modules::{
 
 
 fn main() {
-    let file_path = "./test-js/test1.js";
-    let out_file_path = "./test-js/test1.obs.js";
+    let matches = Command::new("rustfuscator")
+        .version("0.1.0")
+        .author("zoheb khan")
+        .about("Obfuscates JavaScript code")
+        .arg(
+            Arg::new("input")
+                .short('i')
+                .long("input")
+                .value_name("FILE")
+                .required(true),
+        )
+        .arg(
+            Arg::new("output")
+                .short('o')
+                .long("output")
+                .value_name("FILE")
+                .required(true),
+        )
+        .get_matches();
+    
+    
+    let in_file_path = matches.get_one::<String>("input").expect("Input file path is required");
+    let out_file_path = matches.get_one::<String>("output").expect("Output file path is required");
 
-    match read_js_file(&file_path){
+    match read_js_file(in_file_path){
         Ok(mut js_code) => {            
             js_code = whitespace_and_comments(&js_code);
             js_code = insert_dead_code(&js_code);

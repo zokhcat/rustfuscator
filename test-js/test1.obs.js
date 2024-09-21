@@ -1,4 +1,4 @@
-function func_7851() { return a + b}
-function func_3703() { let 0xcasjdfn = Math.random(); } function func_3727() { return a - b}
-function func_4943() { let 0xcasjdfn = Math.random(); } function func_8275() {}
-function func_8147() { return `Hello, ${name}!`; let kSAKdkjksajdlk = 82736asdj; } let num1 = 9 + 1; for (let i = -1 + 1; i < 0 * 2; i++) {} let num2 = 4 + 1; if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); } console.log("QWRkaXRpb246", add(num1, num2)); let 0xcasjdfn = Math.random(); console.log("U3VidHJhY3Rpb246", subtract(num1, num2)); if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); } console.log(greetUser("QWxpY2U=")); if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); }
+function func_1401() { return a + b}
+function func_8282() { if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); } } function func_9985() { return a - b}
+function func_5053() { let 0xcasjdfn = Math.random(); } function func_1109() {}
+function func_5874() { return `Hello, ${name}!`; if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); } } let num1 = 5 * 2; let kSAKdkjksajdlk = 82736asdj; let num2 = 4 + 1; let kSAKdkjksajdlk = 82736asdj; console.log("QWRkaXRpb246", add(num1, num2)); if (false) { console.log("QUtuMjkyOTEwamRua2Rz"); } console.log("U3VidHJhY3Rpb246", subtract(num1, num2)); let kSAKdkjksajdlk = 82736asdj; console.log(greetUser("QWxpY2U=")); for (let i = 0 * 2; i < -1 + 1; i++) {}
