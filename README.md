@@ -4,15 +4,14 @@ Todos:
 - [x] String Encoding
 - [ ] Control Flow Flattening
 - [x] Whitespace and Comment Removal
-- [ ] Number Obfuscation
+- [x] Number Obfuscation
 - [x] Dead Code Insertion
-- [ ] Function Expression Splitting
+- [x] Function Expression Splitting
 - [ ] Array/Object Flattening
-- [ ] Encrypting JS code
+- [ ] Encrypting JS code(Going to remove, don't see the point of encrypting)
 
 Libraries that I am going to use:
 
-- [aes](https://crates.io/crates/aes) for encrpytion, I will use AES256
 - [regex](https://crates.io/crates/regex) for pattern defining
 - [rand](https://crates.io/crates/rand) for random insertion
 - [base64](https://crates.io/crates/base64) for variable encoding and [hex](https://crates.io/crates/hex) to encode strings
