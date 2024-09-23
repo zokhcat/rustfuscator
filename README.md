@@ -57,7 +57,7 @@ Future Todos:
 - [x] Number Obfuscation
 - [x] Dead Code Insertion
 - [x] Function Expression Splitting
-- [ ] Array/Object Flattening
+- [x] Array/Object Flattening
 - [ ] Encrypting JS code(Going to remove, don't see the point of encrypting)
 
 Libraries that I am going to use:
