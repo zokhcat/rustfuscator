@@ -1,5 +1,7 @@
 # Rustfuscator
 
+<img alt="Workflow API and Data Model" src="./assets/obfuscator_engine.png" >
+
 Rustfuscator is a command-line tool written in Rust that obfuscates JavaScript code to make it more difficult to read or reverse-engineer. The tool applies a combination of techniques, including variable renaming, string encoding, number obfuscation, dead code insertion, and function splitting to create a highly obfuscated output.
 
 ## Features
