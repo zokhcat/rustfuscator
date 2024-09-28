@@ -14,7 +14,8 @@ use modules::{
     split_function::split_function::split_function, 
     variables::variable_rename::obfuscate_vars,
     whitespace::whitespace::whitespace_and_comments,
-    array_flat::array_flat::flatten_array
+    array_flat::array_flat::flatten_array,
+    control_flat::control_flat::control_flat
 };
 
 
@@ -52,6 +53,7 @@ fn main() {
             js_code = number_obs(&js_code);
             js_code = split_function(&js_code);
             js_code = flatten_array(&js_code);
+            js_code = control_flat(&js_code);
 
             match write_js_file(out_file_path, &js_code) {
                 Ok(_) => println!("Obfuscated JavaScript code saved to: {}", out_file_path),

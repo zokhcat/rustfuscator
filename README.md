@@ -54,7 +54,7 @@ Future Todos:
 
 - [x] Variable Renaming
 - [x] String Encoding
-- [ ] Control Flow Flattening
+- [x] Control Flow Flattening
 - [x] Whitespace and Comment Removal
 - [x] Number Obfuscation
 - [x] Dead Code Insertion
